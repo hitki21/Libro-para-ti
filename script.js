@@ -14,7 +14,7 @@ const numOfPapers = allPapers.length;
 const maxLocation = numOfPapers + 1;
 let currentLocation = 1;
 let isBookUnlocked = false; 
-const SECRET_KEY = "03062025    "; 
+const SECRET_KEY = "03062025"; 
 
 allPapers.forEach((paper, index) => {
     paper.style.zIndex = (numOfPapers - index) + numOfPapers;
