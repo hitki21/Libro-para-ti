@@ -345,3 +345,13 @@ p {
     font-size: 40px;
     animation: float 4s ease-in-out infinite reverse;
 }
+/* REGLA DEFINITIVA PARA CONTROLAR TODAS LAS FOTOS DEL LIBRO */
+.page-image, 
+.cover-image {
+    max-width: 100% !important;
+    max-height: 210px !important; /* Límite estricto de altura */
+    object-fit: contain !important; /* Mantiene la proporción sin deformar */
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
