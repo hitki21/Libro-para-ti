@@ -88,6 +88,9 @@ function hideLockModal() {
 }
 
 function checkPassword() {
+    // Esto oculta el teclado del celular automáticamente al verificar
+    passwordInput.blur(); 
+
     if (passwordInput.value === SECRET_KEY) {
         // CLAVE CORRECTA
         isBookUnlocked = true; 
@@ -104,7 +107,7 @@ unlockBtn.addEventListener("click", checkPassword);
 
 closeModalBtn.addEventListener("click", hideLockModal);
 
-passwordInput.addEventListener("keypress", (e) => {
+passwordInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         checkPassword();
     }
